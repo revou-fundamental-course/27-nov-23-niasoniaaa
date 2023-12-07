@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="navigation-bar">
+        <h3 id="logo">KALKULATOR MATEMATIKA</h3>
+        <nav class="navigation">
+            <a href="">Luas Segitiga dan</a>
+            <a href="">Keliling Segitiga</a>
+        </nav>
+    </header>
+    <div>
+        <h1 class="Welcome">Welcome To Katik</h1>
+        <p class="special-text">Hai Sobat, Selamat datang di katik</p>
+        <p class="special-text">Sebuah Web sederhana yang berfungsi untuk menghitung nilai luas dan keliling Segitiga</p>
+        <h2 class="segitiga">Segitiga</h2>
+        <h2 class="jajar-genjang">Jajar Genjang</h2>
+    </div>
+    <div class="middle">
+    <h4 class="luas-segitiga">Luas Segitiga</h4>  
+    </div>
+    <div class="center">
+        <img src="https://katik.azurewebsites.net/images/segitiga.jpg" class="img-triangle"></img>
+        <h5>Rumus Luas Segitiga</h5>
+        <p class="rumus">L = 1/2 x a x t </p> 
+        <p>Dimana :</p>
+        <p>L = Luas </p>
+        <p>a = Panjang Alas </p>
+        <p>t = Tinggi </p>
+    </div>
+    <div class="form-hitung">
+        <h2 class="hitung-luas">Hitung Luas Segitiga</h2>
+        <form action="" id="formluasSegitiga" onsubmit="return luas_segitiga()">
+          <input type="number" id="alas" placeholder="Nilai Alas" required />
+          <input type="number" id="tinggi" placeholder="Nilai Tinggi" required />
+
+          <div id="luas-segitiga"></div>
+
+          <button type="submit" id="hitung" class="btn-hitung" onclick="luas_segitiga()">Hitung</button>
+        </form>
+        <button type="reset" class="btn-reset" onclick="reset_LS()">Reset</button>
+      </div>
+
+       
+      <div class="middle">
+        <h4 class="keliling-segitiga">Keliling Segitiga</h4>  
+        </div>
+        <div class="center">
+            <img src="https://katik.azurewebsites.net/images/segitiga.jpg" class="img-triangle"></img>
+            <h5>Rumus Keliling Segitiga</h5>
+            <p class="rumus-kll">K =S1 + S2 + S3</p> 
+            <p>Dimana :</p>
+            <p>K = Keliling </p>
+            <p>S1 = Sisi A </p>
+            <p>S2 = Sisi B </p>
+            <p>S3 = Sisi C </p>
+        </div>
+        <div class="form-hitung">
+            <h2 class="hitung-keliling">Hitung Luas Segitiga</h2>
+            <form action="" id="formkelilingSegitiga" onsubmit="return keliling_segitiga()">
+              <input type="number" id="sisi_a" placeholder="Sisi a" />
+              <input type="number" id="sisi_b" placeholder="Sisi b" />
+              <input type="number" id="sisi_c" placeholder="Sisi c" />
+
+              <div id="keliling-segitiga"></div>
+        
+              <button type="submit" class="btn-hitung" onclick="keliling_segitiga()">Hitung</button>
+            </form>
+            <button type="reset" class="btn-reset" onclick="reset_KS()">Reset</button>
+          </div>
+</body>
+</html>
